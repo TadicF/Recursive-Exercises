@@ -6,12 +6,12 @@ function mergeSort(arr) {
      let right = mergeSort(arr.slice(arr.length / 2));
      
      let i = 0;
-     while(left.length && right.length) { // left = [3], right = [], arr [3,2,1]
+     while(left.length && right.length) { 
       if(left[0] < right[0]) { 
         arr[i] = left[0];
         left.shift();
       } else {
-        arr[i] = right[0]; // arr = [1,2,1]
+        arr[i] = right[0]; 
         right.shift();
       }
       i++;
